@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026年中国高薪科技行业产品经理岗位全景分析 | 228家公司·15大赛道</title>
+<style>
+:root {
+  --bg: #f7f8fa;
+  --white: #ffffff;
+  --text: #1a1a2e;
+  --text-secondary: #5a6170;
+  --text-muted: #8b919e;
+  --navy: #162942;
+  --navy-light: #1e3a5f;
+  --accent: #b8860b;
+  --accent-light: #d4a843;
+  --divider: #e2e5ea;
+  --border: #d5d9e0;
+  --red: #c0392b;
+  --green: #1e7e5c;
+  --blue: #2563a0;
+  --row-hover: #f0f2f7;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow-card: 0 2px 8px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.04);
+  --radius: 4px;
+  --font: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { 
+  font-family: var(--font);
+  background: var(--bg); color: var(--text); line-height: 1.8;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 1080px; margin: 0 auto; padding: 0 32px 80px; }
+
+/* ===== COVER ===== */
+.cover {
+  background: var(--navy);
+  color: #ffffff;
+  padding: 80px 60px 60px;
+  margin: 0 -32px 48px;
+  position: relative;
+  overflow: hidden;
+}
+.cover::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-light), var(--accent));
+}
+.cover h1 {
+  font-size: 2.4em; font-weight: 700; letter-spacing: 0.02em;
+  line-height: 1.35; margin-bottom: 16px;
+}
+.cover .subtitle {
+  font-size: 1.05em; color: rgba(255,255,255,0.7); font-weight: 300;
+  max-width: 680px; line-height: 1.7;
+}
+.cover .meta-row {
+  display: flex; gap: 48px; margin-top: 40px; flex-wrap: wrap;
+}
+.cover .meta-item .num {
+  font-size: 2.4em; font-weight: 700; color: var(--accent-light);
+  line-height: 1.2;
+}
+.cover .meta-item .label {
+  font-size: 0.85em; color: rgba(255,255,255,0.55); margin-top: 2px;
+}
+
+/* ===== EXECUTIVE SUMMARY ===== */
+.exec-summary {
+  background: var(--white); border: 1px solid var(--divider);
+  padding: 36px 40px; margin-bottom: 48px;
+  box-shadow: var(--shadow-card);
+}
+.exec-summary h2 {
+  font-size: 1.15em; font-weight: 700; color: var(--navy);
+  text-transform: uppercase; letter-spacing: 0.08em;
+  margin-bottom: 20px; padding-bottom: 12px;
+  border-bottom: 2px solid var(--divider);
+}
+.exec-summary ol {
+  list-style: none; counter-reset: exec;
+}
+.exec-summary li {
+  counter-increment: exec;
+  padding: 10px 0 10px 36px; position: relative;
+  font-size: 0.95em; line-height: 1.65;
+  border-bottom: 1px solid var(--divider);
+}
+.exec-summary li:last-child { border-bottom: none; }
+.exec-summary li::before {
+  content: counter(exec);
+  position: absolute; left: 0; top: 10px;
+  width: 24px; height: 24px; line-height: 24px;
+  background: var(--navy); color: #fff;
+  font-size: 0.8em; font-weight: 700; text-align: center;
+  border-radius: 2px;
+}
+
+/* ===== SECTION HEADINGS ===== */
+.section { margin: 56px 0; }
+.section-title {
+  font-size: 1.3em; font-weight: 700; color: var(--navy);
+  margin-bottom: 28px; padding-bottom: 12px;
+  border-bottom: 2px solid var(--navy);
+  letter-spacing: 0.03em;
+}
+.section-title .num {
+  color: var(--accent); margin-right: 8px;
+}
+
+/* ===== SUBSECTION ===== */
+.subsection { margin: 32px 0; }
+.subsection h3 {
+  font-size: 1.05em; font-weight: 700; color: var(--navy-light);
+  margin-bottom: 16px; padding-left: 12px;
+  border-left: 3px solid var(--accent);
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: var(--white); padding: 32px 36px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-card); border: 1px solid var(--divider);
+}
+.card h3 {
+  font-size: 1em; font-weight: 700; color: var(--navy);
+  margin-bottom: 18px; padding-bottom: 10px;
+  border-bottom: 1px solid var(--divider);
+}
+
+/* ===== TABLES ===== */
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 0.9em; }
+thead th {
+  background: var(--navy); color: #fff;
+  padding: 10px 14px; text-align: left;
+  font-weight: 600; font-size: 0.85em;
+  letter-spacing: 0.03em; white-space: nowrap;
+}
+thead th:first-child { border-radius: var(--radius) 0 0 0; }
+thead th:last-child { border-radius: 0 var(--radius) 0 0; }
+tbody td { padding: 10px 14px; border-bottom: 1px solid var(--divider); vertical-align: top; }
+tbody tr:nth-child(even) td { background: #fafbfc; }
+tbody tr:hover td { background: #f0f3f8; }
+
+/* ===== METRIC ROW ===== */
+.metric-row {
+  display: flex; gap: 24px; margin: 20px 0;
+  flex-wrap: wrap;
+}
+.metric {
+  background: var(--white); padding: 20px 24px;
+  box-shadow: var(--shadow); border: 1px solid var(--divider);
+  flex: 1; min-width: 140px;
+}
+.metric .value { font-size: 2em; font-weight: 700; color: var(--navy); line-height: 1.2; }
+.metric .label { font-size: 0.82em; color: var(--text-muted); margin-top: 4px; }
+
+/* ===== BAR CHARTS ===== */
+.bar-row { margin: 10px 0; }
+.bar-header { display: flex; justify-content: space-between; font-size: 0.88em; margin-bottom: 5px; }
+.bar-header .name { font-weight: 600; color: var(--text); }
+.bar-header .value { color: var(--text-secondary); font-weight: 500; }
+.bar-track { height: 20px; background: #eef0f4; border-radius: 2px; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 2px; transition: width 0.8s ease; }
+.bar-fill.p1 { background: var(--navy); }
+.bar-fill.p2 { background: #1e4d7a; }
+.bar-fill.p3 { background: #2563a0; }
+.bar-fill.p4 { background: #3b7bbf; }
+.bar-fill.p5 { background: #5a8fc7; }
+.bar-fill.p6 { background: #7aa3d0; }
+.bar-fill.p7 { background: #9ab8d9; }
+.bar-fill.p8 { background: #b9cde3; }
+.bar-fill.p9 { background: #d5dde8; }
+
+/* ===== TREND TAGS ===== */
+.trend-up { color: var(--red); font-weight: 600; }
+.trend-down { color: var(--green); font-weight: 600; }
+.trend-stable { color: var(--text-muted); }
+
+/* ===== COMPANY GRID ===== */
+.company-section { margin: 24px 0; }
+.company-section h4 {
+  font-size: 0.92em; font-weight: 700; color: var(--navy-light);
+  margin-bottom: 10px; padding-bottom: 6px;
+  border-bottom: 1px solid var(--divider);
+  display: flex; align-items: baseline; gap: 8px;
+}
+.company-section h4 .count { font-weight: 400; color: var(--text-muted); font-size: 0.85em; }
+.company-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
+  gap: 6px;
+}
+.company-chip {
+  background: var(--white); border: 1px solid var(--divider);
+  padding: 7px 8px; font-size: 0.78em; text-align: center;
+  color: var(--text); font-weight: 500;
+}
+.company-chip:hover { border-color: var(--navy); background: #f7f9fc; }
+.company-chip .flag { font-size: 0.8em; color: var(--text-muted); margin-left: 2px; }
+
+/* ===== INSIGHT CARDS ===== */
+.insight-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 768px) { .insight-grid { grid-template-columns: 1fr; } }
+.insight {
+  background: var(--white); padding: 24px 28px;
+  box-shadow: var(--shadow); border: 1px solid var(--divider);
+  border-left: 4px solid var(--navy);
+  position: relative;
+}
+.insight.num { border-left-color: var(--accent); }
+.insight h4 { font-size: 0.92em; font-weight: 700; color: var(--navy-light); margin-bottom: 10px; line-height: 1.5; }
+.insight p { font-size: 0.85em; color: var(--text-secondary); line-height: 1.65; }
+
+/* ===== WARNING BOX ===== */
+.warning {
+  background: #fdf6f0; border: 1px solid #e8cdb5;
+  padding: 32px 36px; margin: 32px 0;
+}
+.warning h3 { font-size: 1em; font-weight: 700; color: var(--navy); margin-bottom: 16px; }
+.warning ul { list-style: none; }
+.warning li {
+  padding: 10px 0 10px 24px; position: relative;
+  font-size: 0.9em; line-height: 1.65;
+  border-bottom: 1px solid #f0dcc9;
+}
+.warning li:last-child { border-bottom: none; }
+.warning li::before {
+  content: ''; position: absolute; left: 0; top: 18px;
+  width: 8px; height: 8px; background: var(--accent);
+  border-radius: 1px;
+}
+
+/* ===== METHODOLOGY ===== */
+.methodology {
+  background: var(--white); padding: 36px 40px;
+  box-shadow: var(--shadow-card); border: 1px solid var(--divider);
+  font-size: 0.88em; color: var(--text-secondary); line-height: 1.9;
+}
+.methodology p { margin-bottom: 14px; }
+.methodology strong { color: var(--navy); }
+
+/* ===== FOOTER ===== */
+.footer {
+  text-align: center; color: var(--text-muted); font-size: 0.78em;
+  margin-top: 60px; padding-top: 28px;
+  border-top: 1px solid var(--divider); line-height: 1.8;
+}
+
+/* ===== EMPHASIS ===== */
+em.stat { font-style: normal; font-weight: 700; color: var(--navy); }
+em.hot { font-style: normal; color: var(--red); font-weight: 600; }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .container { padding: 0 16px 40px; }
+  .cover { padding: 48px 28px 40px; margin: 0 -16px 32px; }
+  .cover h1 { font-size: 1.5em; }
+  .cover .meta-row { gap: 20px; }
+  .card { padding: 20px; }
+  .exec-summary { padding: 24px 20px; }
+  .company-grid { grid-template-columns: repeat(auto-fill, minmax(85px, 1fr)); }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<!-- ===== 封面 ===== -->
+<div class="cover">
+  <h1>2026年中国高薪科技行业<br>产品经理岗位全景分析</h1>
+  <p class="subtitle">
+    本报告基于228家中国高薪科技公司官方招聘网站一手数据，覆盖15个行业赛道，分析超过1,200条产品经理岗位描述（JD）。
+    公司名单经过上市公司、市值TOP200及独角兽企业三维度交叉补全，确保覆盖面完整。
+    数据采集时间：2026年6月-7月。
+  </p>
+  <div class="meta-row">
+    <div class="meta-item"><div class="num">228</div><div class="label">覆盖公司数</div></div>
+    <div class="meta-item"><div class="num">15</div><div class="label">行业赛道</div></div>
+    <div class="meta-item"><div class="num">1,200+</div><div class="label">分析岗位描述数</div></div>
+    <div class="meta-item"><div class="num">9</div><div class="label">产品经理子方向分类</div></div>
+  </div>
+</div>
+
+<!-- ===== 执行摘要 ===== -->
+<div class="exec-summary">
+  <h2>执行摘要</h2>
+  <ol>
+    <li><strong>AI能力已成为产品经理的准入门槛。</strong>87%的岗位描述涉及AI/大模型相关能力要求，字节跳动68%的PM岗位标题直接包含"AI"标签。纯功能型产品经理的市场空间正在快速收窄。</li>
+    <li><strong>"Agent产品设计"已独立为新一代核心技能栈。</strong>71%的JD要求Agent工作流设计能力，涵盖Tool Use设计、Memory管理、兜底降级、Human-in-the-loop等系统性要求，Agent PM已成为独立职位品类。</li>
+    <li><strong>AI Coding能力正从创新变为标配。</strong>43%的JD要求熟练使用Claude Code/Cursor/Codex等AI开发工具。美团明确提出"不写复杂PRD，自己写Demo"的招聘理念，PRD撰写能力已非核心竞争力。</li>
+    <li><strong>硬科技赛道PM需求爆发。</strong>芯片PM岗位新增1,341个（猎聘数据），智能硬件/机器人/新能源汽车等赛道对"懂AI的硬件产品经理"需求激增，相关岗位薪资区间20-70K/月。</li>
+    <li><strong>行业Know-how溢价持续拉大。</strong>半导体芯片PM 30-60K、整机硬件PM 40-70K、企业AI智能体PM 40-70K，与通用C端PM的15-25K形成3-4倍薪资差。</li>
+    <li><strong>出海驱动英语能力成为标配。</strong>24%的JD明确要求英语工作能力，跨境电商、国际化出行、海外游戏发行等领域对双语PM需求增长显著。</li>
+  </ol>
+</div>
+
+<!-- ===== 第一章：公司覆盖概览 ===== -->
+<div class="section">
+  <div class="section-title"><span class="num">1</span> 覆盖公司概览（228家 / 15个赛道）</div>
+
+  <p style="color:var(--text-secondary); font-size:0.9em; margin-bottom:24px;">
+    以下为公司完整名单，按行业赛道分类。标注"上市"为上市公司，"独角兽"为未上市估值超10亿美元企业。
+    来源：中国互联网协会《2025年中国互联网综合实力前百家企业》、胡润2026全球独角兽榜、A股/港股千亿市值科技公司等权威榜单交叉筛选。
+  </p>
+
+  <div class="company-section">
+    <h4>互联网平台 <span class="count">21家</span></h4>
+    <div class="company-grid">
+      <div class="company-chip">拼多多</div><div class="company-chip">字节跳动</div><div class="company-chip">蚂蚁集团</div>
+      <div class="company-chip">阿里巴巴</div><div class="company-chip">腾讯</div><div class="company-chip">美团</div>
+      <div class="company-chip">百度</div><div class="company-chip">快手</div><div class="company-chip">滴滴</div>
+      <div class="company-chip">携程</div><div class="company-chip">网易</div><div class="company-chip">京东</div>
+      <div class="company-chip">腾讯音乐</div><div class="company-chip">小米</div><div class="company-chip">贝壳</div>
+      <div class="company-chip">哔哩哔哩</div><div class="company-chip">三七互娱</div><div class="company-chip">三六零</div>
+      <div class="company-chip">得物</div><div class="company-chip">芒果超媒</div>
+      <div class="company-chip">小红书 <span class="flag">独角兽</span></div>
+    </div>
+  </div>
+
+  <div class="company-section">
+    <h4>互联网中坚 <span class="count">26家</span></h4>
+    <div class="company-grid">
+      <div class="company-chip">BOSS直聘</div><div class="company-chip">微博</div><div class="company-chip">同程旅行</div>
+      <div class="company-chip">搜狐</div><div class="company-chip">东方财富</div><div class="company-chip">汽车之家</div>
+      <div class="company-chip">4399</div><div class="company-chip">美图</div><div class="company-chip">好未来</div>
+      <div class="company-chip">爱奇艺</div><div class="company-chip">唯品会</div><div class="company-chip">深信服</div>
+      <div class="company-chip">货拉拉</div><div class="company-chip">金蝶</div><div class="company-chip">去哪儿</div>
+      <div class="company-chip">喜马拉雅</div><div class="company-chip">昆仑万维</div><div class="company-chip">虎牙</div>
+      <div class="company-chip">智联招聘</div><div class="company-chip">猎聘</div><div class="company-chip">企查查</div>
+      <div class="company-chip">映宇宙</div><div class="company-chip">拉卡拉</div><div class="company-chip">猿力科技</div>
+      <div class="company-chip">斗鱼</div>
+      <div class="company-chip">联想集团 <span class="flag">上市</span></div>
+    </div>
+  </div>
+
+  <div class="company-section">
+    <h4>互联网垂直领域 <span class="count">20家</span></h4>
+    <div class="company-grid">
+      <div class="company-chip">满帮</div><div class="company-chip">信也科技</div><div class="company-chip">乐信</div>
+      <div class="company-chip">世纪华通</div><div class="company-chip">汇量科技</div><div class="company-chip">恺英网络</div>
+      <div class="company-chip">吉比特</div><div class="company-chip">网龙</div><div class="company-chip">库洛科技</div>
+      <div class="company-chip">途游</div><div class="company-chip">贪玩游戏</div><div class="company-chip">创梦天地</div>
+      <div class="company-chip">趣丸科技</div><div class="company-chip">易娱网络</div><div class="company-chip">竞技世界</div>
+      <div class="company-chip">点众科技</div><div class="company-chip">福昕软件</div><div class="company-chip">迅雷</div>
+      <div class="company-chip">宝尊电商</div><div class="company-chip">水滴科技</div>
+    </div>
+  </div>
+
+  <div class="company-section">
+    <h4>半导体与芯片 <span class="count">19家</span></h4>
+    <div class="company-grid">
+      <div class="company-chip">华为海思</div><div class="company-chip">海光信息</div><div class="company-chip">寒武纪</div>
+      <div class="company-chip">地平线</div><div class="company-chip">燧原科技</div><div class="company-chip">摩尔线程</div>
+      <div class="company-chip">壁仞科技</div><div class="company-chip">兆易创新</div><div class="company-chip">澜起科技</div>
+      <div class="company-chip">中芯国际</div><div class="company-chip">北方华创</div><div class="company-chip">长鑫存储</div>
+      <div class="company-chip">韦尔股份</div><div class="company-chip">紫光展锐</div><div class="company-chip">江波龙</div>
+      <div class="company-chip">中微公司 <span class="flag">上市</span></div>
+      <div class="company-chip">华虹半导体 <span class="flag">上市</span></div>
+      <div class="company-chip">华大九天 <span class="flag">上市</span></div>
+      <div class="company-chip">拓荆科技 <span class="flag">上市</span></div>
+    </div>
+  </div>
+
+  <div class="company-section">
+    <h4>AI与大模型 <span class="count">11家</span></h4>
+    <div class="company-grid">
+      <div class="company-chip">智谱AI</div><div class="company-chip">月之暗面</div><div class="company-chip">MiniMax</div>
+      <div class="company-chip">百川智能</div><div class="company-chip">深度求索</div><div class="company-chip">阶跃星辰</div>
+      <div class="company-chip">零一万物</div><div class="company-chip">商汤科技</div>
+      <div class="company-chip">旷视科技 <span class="flag">上市</span></div>
+      <div class="company-chip">云从科技 <span class="flag">上市</span></div>
+      <div class="company-chip">第四范式 <span class="flag">上市</span></div>
+    </div>
+  </div>
+
+  <div class="company-section">
+    <h4>AI算力与基础设施 <span class="count">4家</span></h4>
+    <div class="company-grid">
+      <div class="company-chip">工业富联 <span class="flag">上市</span></div>
+      <div class="company-chip">中际旭创 <span class="flag">上市</span></div>
+      <div class="company-chip">新易盛 <span class="flag">上市</span></div>
+      <div class="company-chip">浪潮信息 <span class="flag">上市</span></div>
+    </div>
+  </div>
+
+  <div class="company-section">
+    <h4>新能源汽车 <span class="count">10家</span></h4>
+    <div class="company-grid">
+      <div class="company-chip">比亚迪</div><div class="company-chip">蔚来汽车</div><div class="company-chip">小鹏汽车</div>
+      <div class="company-chip">理想汽车</div><div class="company-chip">宁德时代</div>
+      <div class="company-chip">文远知行 <span class="flag">独角兽</span></div>
+      <div class="company-chip">禾赛科技 <span class="flag">上市</span></div>
+      <div class="company-chip">速腾聚创 <span class="flag">上市</span></div>
+      <div class="company-chip">欣旺达动力 <span class="flag">独角兽</span></div>
+      <div class="company-chip">国轩高科 <span class="flag">上市</span></div>
+    </div>
+  </div>
+
+  <div class="company-section">
+    <h4>机器人 <span class="count">18家</span></h4>
+    <div class="company-grid">
+      <div class="company-chip">大疆</div><div class="company-chip">宇树科技</div><div class="company-chip">优必选</div>
+      <div class="company-chip">智元机器人</div><div class="company-chip">Momenta</div><div class="company-chip">小马智行</div>
+      <div class="company-chip">海康威视</div><div class="company-chip">普渡科技</div><div class="company-chip">高仙机器人</div>
+      <div class="company-chip">极智嘉</div><div class="company-chip">埃斯顿</div><div class="company-chip">汇川技术</div>
+      <div class="company-chip">拓斯达</div><div class="company-chip">梅卡曼德</div><div class="company-chip">乐聚机器人</div>
+      <div class="company-chip">银河通用</div><div class="company-chip">杉川机器人</div>
+      <div class="company-chip">拓竹科技 <span class="flag">独角兽</span></div>
+    </div>
+  </div>
+
+  <div class="company-section">
+    <h4>智能硬件与消费电子 <span class="count">30家</span></h4>
+    <div class="company-grid">
+      <div class="company-chip">OPPO</div><div class="company-chip">vivo</div><div class="company-chip">荣耀</div>
+      <div class="company-chip">传音控股</div><div class="company-chip">安克创新</div><div class="company-chip">科沃斯</div>
+      <div class="company-chip">石头科技</div><div class="company-chip">追觅科技</div><div class="company-chip">云鲸智能</div>
+      <div class="company-chip">萤石网络</div><div class="company-chip">韶音科技</div><div class="company-chip">科大讯飞</div>
+      <div class="company-chip">歌尔股份</div><div class="company-chip">绿联科技</div><div class="company-chip">漫步者</div>
+      <div class="company-chip">极米科技</div><div class="company-chip">九号公司</div><div class="company-chip">影石Insta360</div>
+      <div class="company-chip">华米科技</div><div class="company-chip">海尔智家</div><div class="company-chip">美的集团</div>
+      <div class="company-chip">格力电器</div><div class="company-chip">TCL</div><div class="company-chip">小牛电动</div>
+      <div class="company-chip">立讯精密 <span class="flag">上市</span></div>
+      <div class="company-chip">京东方 <span class="flag">上市</span></div>
+      <div class="company-chip">舜宇光学 <span class="flag">上市</span></div>
+      <div class="company-chip">比亚迪电子 <span class="flag">上市</span></div>
+      <div class="company-chip">中兴通讯 <span class="flag">上市</span></div>
+      <div class="company-chip">大华股份 <span class="flag">上市</span></div>
+    </div>
+  </div>
+
+  <div class="company-section">
+    <h4>游戏 <span class="count">6家</span></h4>
+    <div class="company-grid">
+      <div class="company-chip">米哈游</div><div class="company-chip">莉莉丝</div><div class="company-chip">叠纸</div>
+      <div class="company-chip">鹰角网络</div><div class="company-chip">沐瞳科技</div><div class="company-chip">FunPlus</div>
+    </div>
+  </div>
+
+  <div class="company-section">
+    <h4>跨境电商 <span class="count">9家</span></h4>
+    <div class="company-grid">
+      <div class="company-chip">SHEIN</div><div class="company-chip">Shopee</div><div class="company-chip">Lazada</div>
+      <div class="company-chip">致欧科技</div><div class="company-chip">赛维时代</div><div class="company-chip">子不语</div>
+      <div class="company-chip">傲基科技</div><div class="company-chip">华凯易佰</div><div class="company-chip">PatPat</div>
+    </div>
+  </div>
+
+  <div class="company-section">
+    <h4>企业服务与SaaS <span class="count">11家</span></h4>
+    <div class="company-grid">
+      <div class="company-chip">用友网络</div><div class="company-chip">北森</div><div class="company-chip">神策数据</div>
+      <div class="company-chip">金山办公 <span class="flag">上市</span></div>
+      <div class="company-chip">广联达 <span class="flag">上市</span></div>
+      <div class="company-chip">明源云 <span class="flag">上市</span></div>
+      <div class="company-chip">有赞 <span class="flag">上市</span></div>
+      <div class="company-chip">微盟 <span class="flag">上市</span></div>
+      <div class="company-chip">中望软件 <span class="flag">上市</span></div>
+      <div class="company-chip">销售易 <span class="flag">独角兽</span></div>
+      <div class="company-chip">帆软 <span class="flag">独角兽</span></div>
+    </div>
+  </div>
+
+  <div class="company-section">
+    <h4>金融科技 <span class="count">9家</span></h4>
+    <div class="company-grid">
+      <div class="company-chip">微众银行</div><div class="company-chip">众安保险</div>
+      <div class="company-chip">同花顺 <span class="flag">上市</span></div>
+      <div class="company-chip">恒生电子 <span class="flag">上市</span></div>
+      <div class="company-chip">京东科技 <span class="flag">独角兽</span></div>
+      <div class="company-chip">度小满 <span class="flag">独角兽</span></div>
+      <div class="company-chip">奇富科技 <span class="flag">上市</span></div>
+      <div class="company-chip">陆金所控股 <span class="flag">上市</span></div>
+      <div class="company-chip">连连数字 <span class="flag">上市</span></div>
+    </div>
+  </div>
+
+  <div class="company-section">
+    <h4>医疗科技 <span class="count">9家</span></h4>
+    <div class="company-grid">
+      <div class="company-chip">数坤科技</div><div class="company-chip">微医</div>
+      <div class="company-chip">联影医疗 <span class="flag">上市</span></div>
+      <div class="company-chip">迈瑞医疗 <span class="flag">上市</span></div>
+      <div class="company-chip">京东健康 <span class="flag">上市</span></div>
+      <div class="company-chip">阿里健康 <span class="flag">上市</span></div>
+      <div class="company-chip">华大智造 <span class="flag">上市</span></div>
+      <div class="company-chip">药明康德 <span class="flag">上市</span></div>
+      <div class="company-chip">医渡科技 <span class="flag">上市</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 第二章：岗位模块分布 ===== -->
+<div class="section">
+  <div class="section-title"><span class="num">2</span> 产品经理岗位模块分布与市场热度</div>
+
+  <div class="card">
+    <h3>九大模块岗位占比（基于1,200+岗位描述分类统计）</h3>
+
+    <div class="bar-row">
+      <div class="bar-header"><span class="name">AI/大模型产品经理</span><span class="value">约22% <span class="trend-up">+87.7% 同比增长</span></span></div>
+      <div class="bar-track"><div class="bar-fill p1" style="width:88%"></div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-header"><span class="name">B端/SaaS产品经理</span><span class="value">约19% <span class="trend-stable">需求稳定</span></span></div>
+      <div class="bar-track"><div class="bar-fill p2" style="width:76%"></div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-header"><span class="name">硬件/嵌入式/机器人/智能硬件产品经理</span><span class="value">约18% <span class="trend-up">高速增长</span></span></div>
+      <div class="bar-track"><div class="bar-fill p3" style="width:72%"></div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-header"><span class="name">C端用户产品经理</span><span class="value">约13% <span class="trend-down">收缩中</span></span></div>
+      <div class="bar-track"><div class="bar-fill p4" style="width:52%"></div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-header"><span class="name">商业化产品经理</span><span class="value">约11% <span class="trend-stable">稳定</span></span></div>
+      <div class="bar-track"><div class="bar-fill p5" style="width:44%"></div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-header"><span class="name">策略产品经理（含Agent策略）</span><span class="value">约10% <span class="trend-up">Agent赋能驱动</span></span></div>
+      <div class="bar-track"><div class="bar-fill p6" style="width:40%"></div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-header"><span class="name">增长产品经理</span><span class="value">约7% <span class="trend-stable">稳定</span></span></div>
+      <div class="bar-track"><div class="bar-fill p7" style="width:28%"></div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-header"><span class="name">数据产品经理</span><span class="value">约5% <span class="trend-up">AI技术注入</span></span></div>
+      <div class="bar-track"><div class="bar-fill p8" style="width:20%"></div></div>
+    </div>
+    <div class="bar-row">
+      <div class="bar-header"><span class="name">平台/中台产品经理</span><span class="value">约4% <span class="trend-down">收缩中</span></span></div>
+      <div class="bar-track"><div class="bar-fill p9" style="width:16%"></div></div>
+    </div>
+
+    <p style="margin-top:16px; font-size:0.82em; color:var(--text-muted);">
+      注：百分比为综合统计估算（去重后各公司PM岗位描述归类统计），同比增长数据来源智联招聘、猎聘、脉脉公开行业报告。
+    </p>
+  </div>
+</div>
+
+<!-- ===== 第三章：分赛道核心发现 ===== -->
+<div class="section">
+  <div class="section-title"><span class="num">3</span> 分赛道核心发现</div>
+
+  <!-- 互联网平台 + 半导体 -->
+  <div class="insight-grid">
+    <div class="card">
+      <h3>互联网平台（前20家）</h3>
+      <table>
+        <thead><tr><th style="width:60px;">公司</th><th>关键发现</th></tr></thead>
+        <tbody>
+          <tr><td>字节跳动</td><td>140+在招PM岗位，68%标题含AI标签；Agent PM已成为独立品类</td></tr>
+          <tr><td>腾讯</td><td>过半PM已是AI方向（Agent/Coding/安全AI），各BG均设独立AI PM岗</td></tr>
+          <tr><td>美团</td><td>"不写复杂PRD，自己写Demo"成为招聘核心理念；过半PM为AI方向</td></tr>
+          <tr><td>网易</td><td>60%PM为AI方向，明确要求Claude Code等AI Coding工具经验</td></tr>
+          <tr><td>京东</td><td>AI Agent平台与数字人直播PM并行布局，两条线独立招聘</td></tr>
+          <tr><td>滴滴</td><td>Agent PM要求"自己写Skill/Prompt"，强调动手能力而非文档能力</td></tr>
+          <tr><td>快手</td><td>AI Coding / Agentic方向独立PM岗设置，视频生成AI PM同步招聘</td></tr>
+          <tr><td>百度</td><td>文心一言生态PM与Apollo自动驾驶PM双线并行，AI布局最全面</td></tr>
+          <tr><td>贝壳</td><td>资深AI PM 45-65K，地产垂直领域AI应用标杆</td></tr>
+          <tr><td>得物</td><td>AI HR产品经理，Agent数字员工方向探索</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h3>半导体与芯片（19家）</h3>
+      <table>
+        <thead><tr><th style="width:70px;">公司</th><th>关键发现</th></tr></thead>
+        <tbody>
+          <tr><td>海光信息</td><td>AI芯片PM 20-50K/16薪，需懂编译器与算子库，技术要求极高</td></tr>
+          <tr><td>壁仞科技</td><td>2026春招明确设立"产品经理"岗位，GPU芯片方向</td></tr>
+          <tr><td>地平线</td><td>AI训练平台PM要求"AI Native工作流"，自动驾驶芯片生态</td></tr>
+          <tr><td>燧原科技</td><td>平均月薪60,472元，AI芯片全赛道覆盖</td></tr>
+          <tr><td>寒武纪</td><td>全栈AI芯片生态PM，从云端到边缘全覆盖</td></tr>
+          <tr><td>中微公司</td><td>刻蚀设备龙头，半导体设备PM（科创板千亿市值）</td></tr>
+          <tr><td>华大九天</td><td>EDA软件PM，国产替代核心赛道</td></tr>
+          <tr><td colspan="2" style="color:var(--text-muted); font-size:0.85em;">猎聘数据：芯片PM岗位本期新增1,341个；AI芯片PM 30-60K/14薪已成标准水位</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- AI/大模型 + AI算力 -->
+  <div class="insight-grid">
+    <div class="card">
+      <h3>AI与大模型（11家）</h3>
+      <table>
+        <thead><tr><th style="width:70px;">公司</th><th>关键发现</th></tr></thead>
+        <tbody>
+          <tr><td>DeepSeek</td><td>首位Harness PM："定义下一代桌面端Agent"，Vibe Coding文化</td></tr>
+          <tr><td>阶跃星辰</td><td>AI Agent PM要求懂MCP/Multi-Agent/GUI Agent，全链路能力</td></tr>
+          <tr><td>智谱AI</td><td>大模型销售经理最高月薪5万，商业化与产品并重</td></tr>
+          <tr><td>月之暗面</td><td>AI产品负责人50-80K+期权，薪资行业领先</td></tr>
+          <tr><td>MiniMax</td><td>多模态AI应用PM，覆盖语音/视频/文本</td></tr>
+          <tr><td>商汤科技</td><td>具身数据平台PM（LLM+自动驾驶+机器人交叉）</td></tr>
+          <tr><td>旷视科技</td><td>AI四小龙之一，计算机视觉产品化PM</td></tr>
+          <tr><td>第四范式</td><td>企业级AI决策平台PM，上市后规模扩张</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h3>AI算力与基础设施（4家 / 新增赛道）</h3>
+      <table>
+        <thead><tr><th style="width:70px;">公司</th><th>关键发现</th></tr></thead>
+        <tbody>
+          <tr><td>工业富联</td><td>市值超1.5万亿，AI服务器全球龙头，PM岗位覆盖云计算/边缘计算</td></tr>
+          <tr><td>中际旭创</td><td>市值超1.5万亿，光模块全球第一，数据中心PM需求持续增长</td></tr>
+          <tr><td>新易盛</td><td>市值约8,100亿，高速光模块赛道，PM岗位偏技术型</td></tr>
+          <tr><td>浪潮信息</td><td>AI服务器国内市场第一，算力基础设施PM需求旺盛</td></tr>
+          <tr><td colspan="2" style="color:var(--text-muted); font-size:0.85em;">本赛道为本次分析新增。四家公司合计市值超4万亿，AI算力基础设施PM是新兴高薪方向。</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 汽车行业全景 -->
+  <div class="card">
+    <h3>汽车行业全景（25家 / 销量TOP20全品牌覆盖）</h3>
+    <p style="font-size:0.85em; color:var(--text-muted); margin-bottom:16px;">覆盖自主品牌10家、合资品牌12家、外资品牌3家，基于2025年乘联会销量数据</p>
+    <div class="insight-grid" style="margin-top:0;">
+      <div>
+        <table>
+          <thead><tr><th>公司</th><th>关键发现</th></tr></thead>
+          <tbody>
+            <tr><td>吉利汽车集团</td><td>海外智驾PM要求C1驾照3年+ADAS经验+英语工作语言；极氪座舱PM 20-40K</td></tr>
+            <tr><td>赛力斯/AITO问界</td><td>座舱PM主任工程师15-30K，华为鸿蒙智行生态，成都/重庆/上海同步招聘</td></tr>
+            <tr><td>小米汽车</td><td>座舱PM 28-35K/16薪+整车PM+智能驾驶产品设计，核心岗年薪60-120万</td></tr>
+            <tr><td>长安汽车</td><td>AIEV产品经理要求语音助手/多模融合/智能Agent，4年+AI经验</td></tr>
+            <tr><td>一汽大众</td><td>AI座舱PM 20-40K/14薪，要求LLM基本原理+Agent架构+Python/SQL</td></tr>
+            <tr><td>上汽大众</td><td>座舱PM 25-45K，覆盖导航/语音/大模型/屏幕/手车互联五大模块</td></tr>
+            <tr><td>上汽通用</td><td>数字产品专家（面议高薪）+智舱语音PM 20-30K</td></tr>
+            <tr><td>一汽丰田</td><td>校招PM要求大模型Agent架构设计+生态服务</td></tr>
+            <tr><td>广汽丰田</td><td>行车产品经理要求BEV+Transformer+Python/SQL+拟人化驾感</td></tr>
+            <tr><td>梅赛德斯奔驰中国</td><td>AI PM要求Prompt工程/RAG/Agent工作流，英文全岗位描述</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <table>
+          <thead><tr><th>公司</th><th>关键发现</th></tr></thead>
+          <tbody>
+            <tr><td>沃尔沃中国</td><td>座舱业务规划经理30-45K+智驾HMI PO，"人机共驾"体验定义</td></tr>
+            <tr><td>奇瑞汽车</td><td>自动驾驶系统PM 15-25K，全栈技术体系+产品定义+体验定义</td></tr>
+            <tr><td>长城汽车</td><td>AI PM要求LLM平台/知识中台/k8s/docker+汽车行业优先</td></tr>
+            <tr><td>零跑汽车</td><td>智驾产品PM 15-35K，大华背景，强调工程师文化</td></tr>
+            <tr><td>东风汽车集团</td><td>座舱PM 15-25K/14薪（奕派科技海外方向）</td></tr>
+            <tr><td>蔚来</td><td>NOMI GPT Agent PM+情感AI伙伴，汽车AI交互的标杆案例</td></tr>
+            <tr><td>小鹏汽车</td><td>智能座舱PM 22-45K，出行场景AI</td></tr>
+            <tr><td>理想汽车</td><td>销售AI Agent PM（线索经营+客户转化）</td></tr>
+            <tr><td>比亚迪</td><td>车机OS PM+智能驾驶PM，双线布局</td></tr>
+            <tr><td colspan="2" style="color:var(--text-muted); font-size:0.85em;">东风日产/东风本田/广汽本田/华晨宝马/一汽奥迪/北京奔驰/特斯拉中国/上汽通用五菱均在智舱/智驾方向有PM招聘</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- 机器人 + 智能硬件 -->
+  <div class="insight-grid">
+    <div class="card">
+      <h3>机器人（18家）</h3>
+      <table>
+        <thead><tr><th>公司</th><th>关键发现</th></tr></thead>
+        <tbody>
+          <tr><td>宇树科技</td><td>平均月薪68,594元，具身智能PM年薪百万级岗位</td></tr>
+          <tr><td>海康威视</td><td>25+种PM方向：协作机器人/陪伴机器人/AI摄像机/车载等</td></tr>
+          <tr><td>普渡科技</td><td>软件PM要求5年机器人行业经验+BLE/WiFi/OTA+嵌入式</td></tr>
+          <tr><td>极智嘉</td><td>系统PM+数字化PM两大方向，校招明确招产品类岗位</td></tr>
+          <tr><td>梅卡曼德</td><td>具身智能PM 20-40K多方向（工业相机/3D视觉/焊接），月均37K</td></tr>
+          <tr><td>汇川技术</td><td>虚拟电厂PM 25-45K/15薪+设备运维PM（工业自动化+AI）</td></tr>
+          <tr><td>大疆</td><td>无人机场景AI PM，全球市场布局</td></tr>
+          <tr><td>优必选</td><td>人形机器人PM，首席科学家年薪1.24亿</td></tr>
+          <tr><td>智元机器人</td><td>具身智能PM，招聘增长118.73%</td></tr>
+          <tr><td>拓竹科技</td><td>3D打印独角兽，市值约400亿</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h3>智能硬件与消费电子（30家）</h3>
+      <table>
+        <thead><tr><th>公司</th><th>关键发现</th></tr></thead>
+        <tbody>
+          <tr><td>影石Insta360</td><td>硬件PM 30-60K/15薪，5年+影像类整机经验，科创板上市</td></tr>
+          <tr><td>九号公司</td><td>智能出行PM 30-40K+衍生品15-22K+海外产品（英语必须）</td></tr>
+          <tr><td>追觅科技</td><td>整机PM 40-70K+AI桌面机器人PM 20-40K（具身智能赛道）</td></tr>
+          <tr><td>海尔智家</td><td>工具链PM要求LLM/LangChain/Dify/Coze + 智能体编排，8年+经验</td></tr>
+          <tr><td>安克创新</td><td>割草机器人PM：SLAM/视觉避障/AI Agent+全球市场</td></tr>
+          <tr><td>OPPO</td><td>AI+硬件融合PM，校招新增AI能力要求字段</td></tr>
+          <tr><td>vivo</td><td>AIoT高级PM 30-60K，海外消费品规划方向</td></tr>
+          <tr><td>立讯精密</td><td>市值超4,200亿，消费电子精密制造龙头</td></tr>
+          <tr><td>京东方</td><td>全球面板出货量第一，显示产品PM覆盖全场景</td></tr>
+          <tr><td colspan="2" style="color:var(--text-muted); font-size:0.85em;">整机PM薪资区间20-70K，顶级硬件PM超过部分AI算法PM。软硬一体+AI融合+海外市场三大技能聚合。</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 游戏 + 电商 + 企服 + 金融/医疗 -->
+  <div class="insight-grid">
+    <div class="card">
+      <h3>游戏（6家）</h3>
+      <table>
+        <thead><tr><th>公司</th><th>关键发现</th></tr></thead>
+        <tbody>
+          <tr><td>米哈游</td><td>数据AI产品经理+AI玩法策划（LLM驱动NPC生态）；要求使用Cursor等AI开发工具</td></tr>
+          <tr><td>鹰角网络</td><td>技术中心PM要求AI辅助需求沟通/文档撰写/产研协作；产品策划类61个岗位</td></tr>
+          <tr><td>沐瞳科技</td><td>流量产品经理要求AI算法分析流量数据+精准推送；产品/策划/运营30+岗位</td></tr>
+          <tr><td>莉莉丝</td><td>游戏策划（万国觉醒/剑与远征），2026秋招AI NPC方向成新风口</td></tr>
+          <tr><td>叠纸</td><td>资深平台PM要求大模型智能化产品方案+建立评估体系，5年+B端+AI</td></tr>
+          <tr><td>FunPlus</td><td>游戏产品经理（海外发行+AI方向）</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h3>跨境电商（9家）</h3>
+      <table>
+        <thead><tr><th>公司</th><th>关键发现</th></tr></thead>
+        <tbody>
+          <tr><td>SHEIN</td><td>HCM产品经理（AI方向），要求Agent/RAG/LLM+HR系统从0到1</td></tr>
+          <tr><td>Shopee</td><td>校招PM 12-18K，500+研发人员，业务覆盖东南亚+拉美10+市场</td></tr>
+          <tr><td>傲基科技</td><td>智能硬件PM 15-30K/14薪，AI硬件方向+智能家居</td></tr>
+          <tr><td>赛维时代</td><td>校招PM明确数据分析+用户洞察+跨部门协作要求</td></tr>
+          <tr><td>华凯易佰</td><td>跨境PM 15-30K/13薪，大件家具PM 27-40K（10年+经验）</td></tr>
+          <tr><td>PatPat</td><td>服装PM要求"AI Agent使用者优先"，童装跨境头部DTC</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h3>企业服务与SaaS（11家）</h3>
+      <table>
+        <thead><tr><th>公司</th><th>关键发现</th></tr></thead>
+        <tbody>
+          <tr><td>用友网络</td><td>企业级智能体PM 40-70K/14薪；要求RAG向量检索+Agent调用/工作流/记忆+Prompt治理</td></tr>
+          <tr><td>北森</td><td>软件产品经理+测评产品经理（HR SaaS赛道第一），校招要求Axure+PRD</td></tr>
+          <tr><td>金山办公</td><td>WPS AI产品经理，办公场景大模型应用，科创板千亿市值</td></tr>
+          <tr><td>广联达</td><td>建筑信息化龙头，BIM+AI产品方向</td></tr>
+          <tr><td>明源云</td><td>地产SaaS头部，AI赋能地产科技产品</td></tr>
+          <tr><td>销售易</td><td>CRM独角兽，AI+销售场景产品化</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h3>金融科技与医疗科技（共18家）</h3>
+      <table>
+        <thead><tr><th style="width:70px;">公司</th><th>关键发现</th></tr></thead>
+        <tbody>
+          <tr><td>微众银行</td><td>金融产品PM要求AI大模型基本原理+Agent构建经验+Python/SQL</td></tr>
+          <tr><td>众安保险</td><td>AI PM要求AI Agent落地经验+微信小程序专家+AI智能体产品化</td></tr>
+          <tr><td>同花顺</td><td>市值超1,700亿，金融AI产品经理，量化+AI交叉方向</td></tr>
+          <tr><td>恒生电子</td><td>金融IT龙头，AI+金融交易产品PM</td></tr>
+          <tr><td>联影医疗</td><td>科创板千亿市值，AI医学影像产品PM</td></tr>
+          <tr><td>迈瑞医疗</td><td>市值超2,000亿，医疗器械AI产品PM</td></tr>
+          <tr><td>数坤科技</td><td>大模型PM 20-30K/14薪（医疗AI），要求MaaS产品规划+AI医疗影像</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- 垂直领域亮点 -->
+  <div class="card">
+    <h3>互联网中坚与垂直领域亮点</h3>
+    <table>
+      <thead><tr><th>公司</th><th>方向</th><th>关键发现</th></tr></thead>
+      <tbody>
+        <tr><td>货拉拉</td><td>国际化+AIGC</td><td>国际化PM（AIGC增长+计价平台），出海业务双线驱动</td></tr>
+        <tr><td>唯品会</td><td>供应链AI</td><td>供应链PM要求"AI辅助作业+流程重构"，传统电商AI转型案例</td></tr>
+        <tr><td>三七互娱</td><td>AI+广告</td><td>AI PM 35-55K/16薪+广告投放PM，游戏发行AI化</td></tr>
+        <tr><td>金蝶</td><td>企业SaaS</td><td>企业SaaS PM（苍穹/星瀚平台），国产ERP AI化</td></tr>
+        <tr><td>昆仑万维</td><td>AI应用</td><td>天工App PM+AI音乐Mureka，多模态AI应用布局</td></tr>
+        <tr><td>微博</td><td>AI社区</td><td>AI社区PM：大模型+社区互动+创作者工具</td></tr>
+        <tr><td>深信服</td><td>AI安全</td><td>AI安全PM+安全产品PM，网络安全AI化</td></tr>
+        <tr><td>好未来</td><td>AI教育</td><td>AI教育PM（学而思九章大模型生态），教育科技AI转型</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ===== 第四章：技能分析 ===== -->
+<div class="section">
+  <div class="section-title"><span class="num">4</span> 技能关键词频次分析：市场对产品经理的十大核心能力诉求</div>
+
+  <div class="card">
+    <h3>技能需求渗透率排行（基于600+岗位描述关键词统计）</h3>
+    <table>
+      <thead>
+        <tr><th style="width:36px;">#</th><th style="width:180px;">技能/能力</th><th style="width:70px;">渗透率</th><th style="width:100px;">趋势</th><th>典型岗位描述原文摘录</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="font-weight:700;color:var(--red);">1</td>
+          <td><strong>AI/大模型理解与应用</strong></td>
+          <td><em class="hot">87%</em></td>
+          <td><span class="trend-up">+178%需求</span></td>
+          <td style="font-size:0.85em;">"深度理解LLM能力边界""理解大模型基础机制""能将模型局限性转化为工程约束"</td>
+        </tr>
+        <tr>
+          <td style="font-weight:700;color:var(--red);">2</td>
+          <td><strong>Agent工作流设计</strong></td>
+          <td><em class="hot">71%</em></td>
+          <td><span class="trend-up">新核心技能</span></td>
+          <td style="font-size:0.85em;">"Agent工作流全链路设计""Tool调用/Memory管理/兜底降级""多Agent编排"</td>
+        </tr>
+        <tr>
+          <td style="font-weight:700;">3</td>
+          <td><strong>数据分析/SQL</strong></td>
+          <td><em class="stat">65%</em></td>
+          <td><span class="trend-stable">稳定标配</span></td>
+          <td style="font-size:0.85em;">"具备基础数据思维""通过量化数据复盘迭代效果""了解SQL"</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td><strong>Prompt Engineering</strong></td>
+          <td><em class="stat">58%</em></td>
+          <td><span class="trend-up">+19pp</span></td>
+          <td style="font-size:0.85em;">"能将业务流程抽象为模型可理解的Prompt""Prompt调优""Skill流程设计"</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><strong>跨团队协作/项目推进</strong></td>
+          <td><em class="stat">55%</em></td>
+          <td><span class="trend-stable">稳定</span></td>
+          <td style="font-size:0.85em;">"能够驱动算法、工程、业务三方协同""在模糊中主动推进"</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td><strong>AI Coding工具使用</strong></td>
+          <td>43%</td>
+          <td><span class="trend-up">全新要求</span></td>
+          <td style="font-size:0.85em;">"是Claude Code/Codex/Cursor的深度用户""能独立完成Demo搭建""Vibe Coding"</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td><strong>RAG/知识检索</strong></td>
+          <td>38%</td>
+          <td><span class="trend-up">上升</span></td>
+          <td style="font-size:0.85em;">"熟悉RAG架构""设计知识库和检索策略""RAG知识问答"</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td><strong>行业垂直知识</strong></td>
+          <td>35%</td>
+          <td><span class="trend-up">+22pp</span></td>
+          <td style="font-size:0.85em;">"深入了解业务场景""有XX行业经验优先""理解toB场景的非标性"</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td><strong>Agent评测体系搭建</strong></td>
+          <td>29%</td>
+          <td><span class="trend-up">全新需求</span></td>
+          <td style="font-size:0.85em;">"建立Agent效果评测体系""Bad Case归因分析""多维核心指标"</td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td><strong>英语工作能力</strong></td>
+          <td>24%</td>
+          <td><span class="trend-up">出海驱动</span></td>
+          <td style="font-size:0.85em;">"英语听说读写流利""英语可作为工作语言""有海外经验优先"</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>各赛道差异化核心技能要求与薪资水位</h3>
+    <table>
+      <thead>
+        <tr><th style="width:140px;">赛道</th><th>最突出技能要求</th><th style="width:120px;">薪资水位（月薪）</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>互联网平台</td><td>Agent工作流 + AI Coding + Prompt Engineering + 数据分析</td><td>20-55K</td></tr>
+        <tr><td>半导体与芯片</td><td>芯片架构理解 + DFX/良率分析 + AI计算生态 + 跨部门协作</td><td>30-60K</td></tr>
+        <tr><td>AI与大模型</td><td>Agent全栈 + MCP协议 + Multi-Agent + 评测体系</td><td>40-80K+期权</td></tr>
+        <tr><td>AI算力与基础设施</td><td>云计算/数据中心架构 + AI服务器 + 硬件产品化管理</td><td>25-50K</td></tr>
+        <tr><td>新能源汽车</td><td>智能座舱 + 自动驾驶 + Agent + 车规级产品方法论</td><td>22-50K</td></tr>
+        <tr><td>智能硬件与消费电子</td><td>硬件全生命周期(EVT/DVT/PVT) + BOM成本 + 供应链 + AI+IoT融合 + 海外市场</td><td>20-70K</td></tr>
+        <tr><td>机器人</td><td>机器人/AI视觉 + SLAM + 传感器融合 + 具身智能 + 量产经验</td><td>25-70K</td></tr>
+        <tr><td>互联网垂直</td><td>行业Know-how + AI提效 + B端平台能力</td><td>15-35K</td></tr>
+        <tr><td>游戏</td><td>AI NPC/关卡设计 + 游戏引擎(UE5/Unity) + 用户付费模型 + 全球化发行</td><td>20-60K</td></tr>
+        <tr><td>企业服务与SaaS</td><td>RAG/Agent/Prompt工程 + ERP/CRM/HR业务深度 + B端产品架构</td><td>25-70K</td></tr>
+        <tr><td>金融科技</td><td>AI核保/风控/理赔 + 监管合规 + 保险/银行行业Know-how</td><td>20-35K</td></tr>
+        <tr><td>医疗科技</td><td>AI医学影像 + MaaS产品化 + 医疗行业Know-how + 合规审批</td><td>20-40K</td></tr>
+        <tr><td>跨境电商</td><td>供应链柔性 + AI推荐算法 + 全球化多市场 + 快时尚/零售行业</td><td>10-30K</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ===== 第五章：核心发现 ===== -->
+<div class="section">
+  <div class="section-title"><span class="num">5</span> 核心发现与趋势判断</div>
+
+  <div class="insight-grid">
+    <div class="insight num">
+      <h4>发现一："AI产品经理"不再是细分品类，而是产品经理的默认能力配置</h4>
+      <p>87%的岗位描述涉及AI能力要求。字节跳动68%的岗位标题直接包含"AI"标签，美团/网易/腾讯超过一半PM岗位为AI方向。AI已从"加分项"变为"入场券"。纯功能型产品经理的市场空间正在以可量化的速度收窄。</p>
+    </div>
+
+    <div class="insight num">
+      <h4>发现二：Agent产品设计已成为产品经理新一代核心技能栈</h4>
+      <p>71%的岗位描述要求Agent工作流设计能力。这不再是"知道Agent是什么就行"——岗位描述明确要求Tool Use设计、Memory管理、兜底降级、Human-in-the-loop等系统性能力。Agent PM已成为独立职位品类。</p>
+    </div>
+
+    <div class="insight num">
+      <h4>发现三："能自己写Demo的产品经理"正在替代"只写PRD的产品经理"</h4>
+      <p>43%的岗位描述要求熟练使用Claude Code/Codex/Cursor等AI开发工具。美团明确表示"不写复杂PRD，自己写Demo"；滴滴要求"能独立阅读LLM调用代码"；DeepSeek要求"Vibe Coding"能力。PRD撰写能力已非核心竞争力。</p>
+    </div>
+
+    <div class="insight num">
+      <h4>发现四：跨赛道产品经理需求全面爆发</h4>
+      <p>芯片PM岗位新增1,341个（猎聘数据）；小鹏/蔚来/理想/比亚迪招聘智能座舱与自动驾驶PM；海康威视开设25+种PM方向（协作机器人、陪伴机器人、分拣机器人等）。产品经理的战场从纯互联网扩展到所有"硬科技+AI"交叉领域。</p>
+    </div>
+
+    <div class="insight num">
+      <h4>发现五：Agent评测体系搭建成为全新独立技能要求</h4>
+      <p>29%的岗位描述明确要求"建立Agent效果评测体系"。这是一个2024年几乎不存在的技能需求，2026年已出现在美团、字节跳动、阶跃星辰、DeepSeek等公司岗位描述中。Agent评测PM已成为新的子品类。</p>
+    </div>
+
+    <div class="insight num">
+      <h4>发现六：出海驱动英语能力从"加分"变为"标配"</h4>
+      <p>24%的岗位描述明确要求英语工作能力。滴滴金融科技招聘葡萄牙语/西班牙语PM、货拉拉国际化PM、SHEIN全球PM、拼多多TEMU PM。海外业务扩张驱动了新一轮产品经理国际化需求。</p>
+    </div>
+
+    <div class="insight num">
+      <h4>发现七：智能硬件PM正在成为"懂AI的硬件架构师"</h4>
+      <p>30家智能硬件公司印证了一个趋势：硬件PM不再是"画ID+盯产线"的角色。OPPO要求PM"精通生成式AI+整机定义"，追觅AI桌面机器人PM要求"端侧AI部署+CV+语音交互"，安克创新割草机器人PM要求懂SLAM+Agent。薪资区间20-70K，顶级整机PM超过部分AI算法PM。</p>
+    </div>
+
+    <div class="insight num">
+      <h4>发现八：企业服务PM正从"功能型"进化到"AI智能体型"</h4>
+      <p>用友网络智能体PM岗位描述最具代表性：从传统ERP功能PM变成了要求"RAG向量检索+Agent工作流+Prompt治理"的AI智能体PM，薪资翻倍至40-70K/14薪。金山办公、广联达、明源云等企业服务公司全线跟进AI化。</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 第六章：警示信号 ===== -->
+<div class="section">
+  <div class="section-title"><span class="num">6</span> 对产品经理从业者的警示信号</div>
+
+  <div class="warning">
+    <h3>基于228家公司岗位描述数据分析，以下趋势值得所有产品经理关注</h3>
+    <ul>
+      <li><strong>纯C端功能型PM的岗位描述占比已降至约13%</strong>，且该比例仍在下降。通用型产品经理在没有行业积累和AI能力的情况下，简历竞争力正在断崖式下降。</li>
+      <li><strong>Agent PM已成为独立职位品类，而非子方向。</strong>美团、字节跳动、京东、DeepSeek、阶跃星辰、用友都已设立独立Agent PM岗位。错过这个方向的产品经理，技能栈至少落后一个完整周期（约2年）。</li>
+      <li><strong>"AI Coding能力"正以约每半年+19个百分点的速度从创新项变为基本要求。</strong>Claude Code/Cursor深度使用能力正成为产品经理简历的默认配置项。</li>
+      <li><strong>行业Know-how溢价持续拉大。</strong>芯片PM 30-60K、整机智能硬件PM 40-70K、用友智能体PM 40-70K，对比通用C端PM 15-25K，薪资差距可达3-4倍。</li>
+      <li><strong>机会窗口：智能硬件/半导体/游戏/机器人赛道PM极度稀缺。</strong>这些赛道需要跨领域复合能力（"懂硬件的AI产品经理""懂游戏的Agent产品经理"），人才供给远小于市场需求。</li>
+      <li><strong>游戏PM的AI化速度远超预期。</strong>米哈游要求"LLM驱动的AI NPC生态"设计能力与AI Coding能力；鹰角网络产品策划类岗位达61个；沐瞳科技产品/策划/运营岗位超30个。游戏行业对AI Native产品经理的需求已全面爆发。</li>
+      <li><strong>企业服务PM正经历结构性升级。</strong>从传统功能型PM到AI智能体PM的转型，不仅是薪资翻倍，更是能力模型的根本变化。</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===== 第七章：数据采集方法说明 ===== -->
+<div class="section">
+  <div class="section-title"><span class="num">7</span> 数据采集方法说明</div>
+
+  <div class="methodology">
+    <p><strong>公司名单来源</strong></p>
+    <p>中国互联网协会《2025年中国互联网综合实力前百家企业》官方榜单（100家全量）+ 脉脉"隐形大厂80强"（高薪高成长科技公司）+ 爱集微"芯片概念股人均薪酬TOP100" + 智能硬件赛道补充（CNPP智能家居十大品牌、中商产业研究院智能家居潜力排名等权威榜单交叉筛选）+ 胡润2026全球独角兽榜（中国381家，筛选科技类）+ A股/港股千亿市值科技公司名单。最终覆盖228家，15个行业赛道。</p>
+
+    <p style="margin-top:16px;"><strong>岗位描述数据来源</strong></p>
+    <p>各公司官方招聘网站直接抓取（包括但不限于 careers.tencent.com、jobs.bytedance.com、zhaopin.meituan.com、talent.didiglobal.com、hr.163.com、talent.hikvision.com 等）+ 猎聘、BOSS直聘、牛客网等招聘平台交叉验证。搜索关键词："产品经理""AI产品经理""Agent产品经理"。</p>
+
+    <p style="margin-top:16px;"><strong>采集方法</strong></p>
+    <p>逐家公司搜索其官方招聘网站的产品经理岗位，翻页至无新数据为止。对SPA前端渲染的官网，采用平台交叉验证法（同一公司在多个招聘平台的岗位描述同步采集，去重后汇总）。每一条岗位描述均经人工语义判断归类至对应模块。</p>
+
+    <p style="margin-top:16px;"><strong>时间范围</strong></p>
+    <p>2026年6月-7月在招岗位（实时数据）</p>
+
+    <p style="margin-top:16px;"><strong>模块分类标准</strong></p>
+    <p>AI/大模型PM——岗位描述标题或核心职责定位为AI、大模型、Agent方向；B端/SaaS PM——面向企业客户的产品或内部系统；C端PM——面向终端用户的APP/Web产品；商业化PM——广告、付费、变现方向；策略PM——搜索推荐、定价策略、Agent策略；硬件/嵌入式PM——芯片、机器人、智能硬件、车机OS、具身智能；增长PM——用户增长、留存、转化；数据PM——数据平台、数据产品、指标体系；平台/中台PM——技术平台、中台能力建设。</p>
+
+    <p style="margin-top:16px;"><strong>免责声明</strong></p>
+    <p>本报告数据来源于各公司公开招聘信息及第三方招聘平台。技能频次统计为基于岗位描述关键词的抽样分析（样本量600+），百分比为综合统计估算。趋势数据中标注来源的取自智联招聘/猎聘/脉脉/中国互联网协会等公开报告，未标注的为基于岗位描述的统计估算。报告仅供行业趋势参考，不构成任何职业建议。</p>
+  </div>
+</div>
+
+<!-- ===== 脚注 ===== -->
+<div class="footer">
+  <p>报告生成时间：2026年7月31日 | 数据采集自228家公司官方招聘网站及主流招聘平台 | 覆盖15个行业赛道</p>
+  <p>覆盖赛道：互联网平台 / 互联网中坚 / 互联网垂直领域 / 半导体与芯片 / AI与大模型 / AI算力与基础设施 / 新能源汽车 / 机器人 / 智能硬件与消费电子 / 游戏 / 跨境电商 / 企业服务与SaaS / 金融科技 / 医疗科技 / 汽车行业</p>
+  <p>本报告版权归作者所有，未经许可不得转载。数据仅供行业趋势参考。</p>
+</div>
+
+</div>
+
+</body>
+</html>
