@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>小红书分享素材 - PM市场全景2026</title>
+<style>
+:root {
+  --navy: #162942;
+  --gold: #b8860b;
+  --gold-l: #d4a843;
+  --red: #c0392b;
+  --bg-dark: #0f1d2e;
+  --bg-card: #f5f4f0;
+  --text: #1a1a1a;
+  --white: #ffffff;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: "PingFang SC","Microsoft YaHei","Noto Sans SC",-apple-system,sans-serif;
+  background: #1a1a1a; display:flex; flex-direction:column; align-items:center;
+  padding: 20px 0;
+}
+
+.slide {
+  width: 375px; height: 500px; /* 3:4 */
+  margin-bottom: 4px;
+  position: relative; overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* ── SLIDE 1: COVER ── */
+.s1 { background: var(--navy); color: #fff; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:36px 32px; }
+.s1 .eyebrow { font-size:12px; letter-spacing:.14em; color:var(--gold); margin-bottom:20px; font-weight:600; text-transform:uppercase; }
+.s1 h1 { font-size:26px; font-weight:800; line-height:1.35; letter-spacing:.03em; margin-bottom:14px; }
+.s1 .sub { font-size:13px; color:rgba(255,255,255,.55); line-height:1.6; max-width:300px; }
+.s1 .stats { display:flex; gap:12px; margin-top:28px; }
+.s1 .stat { background:rgba(255,255,255,.07); padding:10px 14px; }
+.s1 .stat .n { font-size:22px; font-weight:800; color:var(--gold-l); line-height:1.1; }
+.s1 .stat .l { font-size:10px; color:rgba(255,255,255,.4); margin-top:3px; }
+.s1 .line { position:absolute; bottom:0; left:0; right:0; height:3px; background:linear-gradient(90deg,var(--gold),var(--gold-l),var(--gold)); }
+
+/* ── SLIDE 2: AI准入门槛 ── */
+.s2 { background:var(--white); display:flex; flex-direction:column; padding:40px 32px; }
+.s2 .num { font-size:11px; font-weight:700; color:var(--gold); letter-spacing:.1em; margin-bottom:8px; }
+.s2 h2 { font-size:22px; font-weight:800; color:var(--navy); line-height:1.35; margin-bottom:12px; }
+.s2 .big { font-size:64px; font-weight:900; color:var(--navy); line-height:1; margin:12px 0 4px; }
+.s2 .big-unit { font-size:18px; font-weight:700; color:var(--navy); }
+.s2 .desc { font-size:13px; color:#555; line-height:1.7; margin-top:8px; }
+.s2 .highlight { background:var(--navy); color:#fff; padding:2px 6px; font-weight:700; }
+.s2 .accent-line { width:40px; height:3px; background:var(--gold); margin-top:auto; }
+
+/* ── SLIDE 3: Agent PM ── */
+.s3 { background:var(--navy); color:#fff; display:flex; flex-direction:column; padding:40px 32px; }
+.s3 .num { font-size:11px; font-weight:700; color:var(--gold-l); letter-spacing:.1em; margin-bottom:8px; }
+.s3 h2 { font-size:22px; font-weight:800; line-height:1.35; margin-bottom:8px; }
+.s3 .subtitle { font-size:13px; color:rgba(255,255,255,.6); line-height:1.6; margin-bottom:20px; }
+.s3 .tags { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:20px; }
+.s3 .tag { border:1px solid rgba(255,255,255,.3); padding:5px 10px; font-size:11px; border-radius:2px; color:rgba(255,255,255,.8); }
+.s3 .big { font-size:56px; font-weight:900; color:var(--gold-l); line-height:1; }
+.s3 .big-label { font-size:13px; color:rgba(255,255,255,.5); margin-top:4px; }
+.s3 .accent-line { width:40px; height:3px; background:var(--gold); margin-top:auto; }
+
+/* ── SLIDE 4: AI Coding ── */
+.s4 { background:var(--bg-card); display:flex; flex-direction:column; padding:40px 32px; }
+.s4 .num { font-size:11px; font-weight:700; color:var(--gold); letter-spacing:.1em; margin-bottom:8px; }
+.s4 h2 { font-size:22px; font-weight:800; color:var(--navy); line-height:1.35; margin-bottom:16px; }
+.s4 .quote { border-left:3px solid var(--gold); padding:10px 0 10px 14px; font-size:14px; color:var(--navy); line-height:1.6; font-weight:600; font-style:italic; background:rgba(184,134,11,.06); }
+.s4 .quote-author { font-size:11px; color:#888; margin-top:6px; padding-left:17px; }
+.s4 .tool-row { display:flex; gap:8px; margin:16px 0; flex-wrap:wrap; }
+.s4 .tool { border:1px solid var(--navy); padding:6px 12px; font-size:12px; font-weight:600; color:var(--navy); border-radius:2px; }
+.s4 .big { font-size:48px; font-weight:900; color:var(--navy); line-height:1; margin-top:auto; }
+.s4 .big-label { font-size:13px; color:#666; margin-top:2px; }
+
+/* ── SLIDE 5: 硬科技 ── */
+.s5 { background:var(--white); display:flex; flex-direction:column; padding:40px 32px; }
+.s5 .num { font-size:11px; font-weight:700; color:var(--gold); letter-spacing:.1em; margin-bottom:8px; }
+.s5 h2 { font-size:22px; font-weight:800; color:var(--navy); line-height:1.35; margin-bottom:16px; }
+.s5 .metric-row { display:flex; gap:10px; margin-bottom:16px; }
+.s5 .metric { flex:1; background:var(--navy); color:#fff; padding:14px 12px; text-align:center; }
+.s5 .metric .n { font-size:24px; font-weight:800; color:var(--gold-l); line-height:1.1; }
+.s5 .metric .l { font-size:10px; color:rgba(255,255,255,.5); margin-top:4px; line-height:1.4; }
+.s5 .salary-row { display:flex; flex-direction:column; gap:6px; margin-top:8px; }
+.s5 .salary { display:flex; justify-content:space-between; align-items:center; font-size:12px; padding:8px 10px; background:#f5f4f0; }
+.s5 .salary .role { font-weight:600; color:var(--navy); }
+.s5 .salary .range { color:var(--red); font-weight:700; }
+
+/* ── SLIDE 6: 薪资差 ── */
+.s6 { background:var(--navy); color:#fff; display:flex; flex-direction:column; padding:40px 32px; }
+.s6 .num { font-size:11px; font-weight:700; color:var(--gold-l); letter-spacing:.1em; margin-bottom:8px; }
+.s6 h2 { font-size:22px; font-weight:800; line-height:1.35; margin-bottom:16px; }
+.s6 .bar-compare { display:flex; flex-direction:column; gap:10px; margin:8px 0; }
+.s6 .bar-comp { display:flex; align-items:center; gap:8px; }
+.s6 .bar-comp .label { font-size:11px; width:70px; flex-shrink:0; color:rgba(255,255,255,.7); text-align:right; }
+.s6 .bar-comp .bar { flex:1; height:22px; border-radius:2px; display:flex; align-items:center; padding-left:8px; font-size:10px; font-weight:700; }
+.s6 .bar-comp .bar.b1 { background:var(--gold); color:var(--navy); }
+.s6 .bar-comp .bar.b2 { background:rgba(255,255,255,.2); color:#fff; }
+.s6 .arrow { text-align:center; font-size:20px; margin:8px 0; color:var(--gold-l); }
+.s6 .summary { font-size:13px; line-height:1.7; color:rgba(255,255,255,.7); margin-top:12px; }
+
+/* ── SLIDE 7: PM子方向洗牌 ── */
+.s7 { background:var(--white); display:flex; flex-direction:column; padding:40px 32px; }
+.s7 .num { font-size:11px; font-weight:700; color:var(--gold); letter-spacing:.1em; margin-bottom:8px; }
+.s7 h2 { font-size:20px; font-weight:800; color:var(--navy); line-height:1.35; margin-bottom:16px; }
+.s7 .pm-bar { margin-bottom:8px; }
+.s7 .pm-bar .pm-label { display:flex; justify-content:space-between; font-size:11px; margin-bottom:3px; }
+.s7 .pm-bar .pm-label .name { font-weight:600; color:var(--navy); }
+.s7 .pm-bar .pm-label .pct { color:#888; }
+.s7 .pm-bar .track { height:14px; background:#eef0f0; border-radius:2px; overflow:hidden; }
+.s7 .pm-bar .fill { height:100%; border-radius:2px; }
+.s7 .pm-bar .fill.f1 { background:var(--navy); }
+.s7 .pm-bar .fill.f2 { background:#1e4d7a; }
+.s7 .pm-bar .fill.f3 { background:#2563a0; }
+.s7 .pm-bar .fill.f4 { background:#3b7bbf; }
+.s7 .pm-bar .fill.f5 { background:#5a8fc7; }
+.s7 .pm-bar .fill.f6 { background:#7aa3d0; }
+.s7 .note { font-size:10px; color:#999; margin-top:4px; }
+
+/* ── SLIDE 8: CTA ── */
+.s8 { background:var(--bg-card); display:flex; flex-direction:column; padding:40px 32px; justify-content:center; text-align:center; }
+.s8 .icon { font-size:28px; margin-bottom:12px; }
+.s8 h2 { font-size:18px; font-weight:800; color:var(--navy); line-height:1.4; margin-bottom:10px; }
+.s8 .desc { font-size:13px; color:#555; line-height:1.7; margin-bottom:24px; }
+.s8 .cta-btn { display:inline-block; background:var(--navy); color:#fff; padding:12px 32px; font-size:13px; font-weight:700; text-decoration:none; letter-spacing:.03em; border-radius:2px; }
+.s8 .url { font-size:11px; color:#888; margin-top:12px; word-break:break-all; }
+.s8 .accent-line { width:40px; height:3px; background:var(--gold); margin:16px auto 0; }
+
+/* PRINT / SCREENSHOT */
+@media print {
+  body { background: #fff; padding: 0; }
+  .slide { page-break-after: always; width: 1080px; height: 1440px; }
+}
+</style>
+</head>
+<body>
+
+<!-- SLIDE 1 · 封面 -->
+<div class="slide s1">
+  <div class="eyebrow">Product Manager Market Report 2026 H1</div>
+  <h1>2026中国高薪科技行业<br>PM岗位全景分析</h1>
+  <div class="sub">228家公司官方招聘网站一手数据<br>15个行业赛道 · 1,200+岗位描述</div>
+  <div class="stats">
+    <div class="stat"><div class="n">228</div><div class="l">覆盖公司</div></div>
+    <div class="stat"><div class="n">15</div><div class="l">行业赛道</div></div>
+    <div class="stat"><div class="n">87%</div><div class="l">JD涉及AI</div></div>
+    <div class="stat"><div class="n">9</div><div class="l">PM子方向</div></div>
+  </div>
+  <div class="line"></div>
+</div>
+
+<!-- SLIDE 2 · AI准入门槛 -->
+<div class="slide s2">
+  <div class="num">FINDING 01</div>
+  <h2>AI能力已成<br>PM准入门槛</h2>
+  <div><span class="big">87</span><span class="big-unit">%</span></div>
+  <div class="desc">的岗位描述涉及<span class="highlight">AI/大模型</span>能力要求</div>
+  <div class="desc" style="margin-top:8px;">
+    字节跳动<span style="font-weight:700;color:var(--navy);">68%</span>的PM岗位标题<br>直接包含"AI"标签
+  </div>
+  <div class="desc" style="margin-top:12px; font-size:12px; color:#888;">
+    纯功能型产品经理的市场空间正在快速收窄。<br>写PRD、画原型的能力已非核心竞争力。
+  </div>
+  <div class="accent-line"></div>
+</div>
+
+<!-- SLIDE 3 · Agent PM -->
+<div class="slide s3">
+  <div class="num">FINDING 02</div>
+  <h2>"Agent产品设计"<br>已成独立技能栈</h2>
+  <div class="subtitle">Agent PM已从概念变为独立职位品类</div>
+  <div class="tags">
+    <div class="tag">Tool Use设计</div>
+    <div class="tag">Memory管理</div>
+    <div class="tag">兜底降级</div>
+    <div class="tag">HITL人机协作</div>
+    <div class="tag">MCP协议</div>
+    <div class="tag">Multi-Agent</div>
+  </div>
+  <div><span class="big">71</span><span style="font-size:20px;color:var(--gold-l);">%</span></div>
+  <div class="big-label">的JD要求Agent工作流设计能力</div>
+  <div class="accent-line"></div>
+</div>
+
+<!-- SLIDE 4 · AI Coding -->
+<div class="slide s4">
+  <div class="num">FINDING 03</div>
+  <h2>AI Coding<br>从创新变为标配</h2>
+  <div class="quote">
+    "不写复杂PRD，自己写Demo"
+  </div>
+  <div class="quote-author">—— 美团2026年PM招聘核心理念</div>
+  <div class="tool-row">
+    <div class="tool">Claude Code</div>
+    <div class="tool">Cursor</div>
+    <div class="tool">Codex</div>
+    <div class="tool">Copilot</div>
+  </div>
+  <div><span class="big">43</span><span style="font-size:16px;color:var(--navy);">%</span></div>
+  <div class="big-label">的JD要求熟练使用AI开发工具</div>
+</div>
+
+<!-- SLIDE 5 · 硬科技爆发 -->
+<div class="slide s5">
+  <div class="num">FINDING 04</div>
+  <h2>硬科技赛道<br>PM需求爆发</h2>
+  <div class="metric-row">
+    <div class="metric"><div class="n">1,341</div><div class="l">芯片PM<br>新增岗位</div></div>
+    <div class="metric"><div class="n">20-70K</div><div class="l">硬件PM<br>月薪区间</div></div>
+  </div>
+  <div class="salary-row">
+    <div class="salary"><span class="role">芯片PM</span><span class="range">30-60K / 月</span></div>
+    <div class="salary"><span class="role">整机硬件PM</span><span class="range">40-70K / 月</span></div>
+    <div class="salary"><span class="role">AI智能体PM</span><span class="range">40-70K / 月</span></div>
+    <div class="salary"><span class="role">汽车座舱PM</span><span class="range">25-45K / 月</span></div>
+  </div>
+  <div class="desc" style="font-size:12px;color:#888;margin-top:10px;">智能硬件 · 机器人 · 新能源 · AI芯片 —— 四大硬科技方向全面爆发</div>
+</div>
+
+<!-- SLIDE 6 · 薪资差 -->
+<div class="slide s6">
+  <div class="num">FINDING 05</div>
+  <h2>行业Know-how<br>溢价3-4倍</h2>
+  <div class="bar-compare">
+    <div class="bar-comp">
+      <div class="label">AI智能体PM</div>
+      <div class="bar b1" style="width:90%">40-70K</div>
+    </div>
+    <div class="bar-comp">
+      <div class="label">芯片PM</div>
+      <div class="bar b1" style="width:78%">30-60K</div>
+    </div>
+    <div class="bar-comp">
+      <div class="label">汽车座舱PM</div>
+      <div class="bar b1" style="width:60%">25-45K</div>
+    </div>
+    <div class="bar-comp">
+      <div class="label">通用C端PM</div>
+      <div class="bar b2" style="width:35%">15-25K</div>
+    </div>
+  </div>
+  <div class="arrow">↑ 3-4x</div>
+  <div class="summary">
+    半导体、新能源汽车、AI基础设施<br>三大领域壁垒持续加高<br>通才PM竞争力持续下降
+  </div>
+</div>
+
+<!-- SLIDE 7 · PM子方向洗牌 -->
+<div class="slide s7">
+  <div class="num">FINDING 06</div>
+  <h2>PM子方向<br>正在大洗牌</h2>
+  <div class="pm-bar">
+    <div class="pm-label"><span class="name">AI/大模型PM</span><span class="pct">22%</span></div>
+    <div class="track"><div class="fill f1" style="width:88%"></div></div>
+  </div>
+  <div class="pm-bar">
+    <div class="pm-label"><span class="name">B端/SaaS PM</span><span class="pct">19%</span></div>
+    <div class="track"><div class="fill f2" style="width:76%"></div></div>
+  </div>
+  <div class="pm-bar">
+    <div class="pm-label"><span class="name">硬件/嵌入式/机器人PM</span><span class="pct">18%</span></div>
+    <div class="track"><div class="fill f3" style="width:72%"></div></div>
+  </div>
+  <div class="pm-bar">
+    <div class="pm-label"><span class="name">C端用户PM</span><span class="pct">13% ↓</span></div>
+    <div class="track"><div class="fill f4" style="width:52%"></div></div>
+  </div>
+  <div class="pm-bar">
+    <div class="pm-label"><span class="name">商业化PM</span><span class="pct">11%</span></div>
+    <div class="track"><div class="fill f5" style="width:44%"></div></div>
+  </div>
+  <div class="pm-bar">
+    <div class="pm-label"><span class="name">策略/Agent策略PM</span><span class="pct">10%</span></div>
+    <div class="track"><div class="fill f6" style="width:40%"></div></div>
+  </div>
+  <div class="note">AI方向22%占比首次超越B端，C端持续收缩。数据基于228家公司1,200+岗位描述统计。</div>
+</div>
+
+<!-- SLIDE 8 · CTA -->
+<div class="slide s8">
+  <div class="icon">&#9670;</div>
+  <h2>完整报告已开放</h2>
+  <div class="desc">
+    228家公司完整名单<br>
+    15大赛道逐一深度分析<br>
+    技能需求频次完整排行<br>
+    汽车行业TOP 20品牌全览
+  </div>
+  <a class="cta-btn" href="https://dendendamen.cn/chinapmsignal2026h1/" target="_blank">查看完整报告</a>
+  <div class="url">dendendamen.cn/chinapmsignal2026h1</div>
+  <div class="accent-line"></div>
+</div>
+
+<div style="color:#666;font-size:11px;padding:16px;text-align:center;width:375px;">
+  建议用手机打开本页面截图<br>或直接访问 dendendamen.cn/chinapmsignal2026h1 查看完整报告
+</div>
+
+</body>
+</html>
